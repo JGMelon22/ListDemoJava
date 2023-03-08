@@ -11,6 +11,7 @@ import javax.swing.JLayeredPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import java.awt.Color;
+import java.awt.Cursor;
 
 public class MainForm {
 
@@ -61,6 +62,7 @@ public class MainForm {
 
 		JButton btnNewButton = new JButton("Query Now!");
 		btnNewButton.setBackground(new Color(87, 227, 137));
+		btnNewButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -82,6 +84,7 @@ public class MainForm {
 		layeredPane.add(btnNewButton);
 
 		JButton btnClear = new JButton("Clear");
+		btnNewButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		btnClear.setBackground(new Color(255, 163, 72));
 		btnClear.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

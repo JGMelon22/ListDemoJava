@@ -13,7 +13,7 @@ import org.jooq.impl.DSL;
 
 public class DataContext {
 	public static String DataQuery() {
-		String url = "jdbc:mysql://172.17.0.2:3306/JavaMySQL";
+		String url = "jdbc:mysql://172.17.0.2:3306/java_mysql";
 		String username = "root";
 		String password = "Melon@123";
 

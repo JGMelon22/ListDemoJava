@@ -4,9 +4,9 @@ CREATE DATABASE java_mysql;
 -- Table Structure
 CREATE TABLE people (
   id INT NOT NULL AUTO_INCREMENT,
-  name VACRHAR(100) NOT NULL,
-  email VACRHAR(100) NOT NULL,
-  gender VACRHAR(6) NOT NULL,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  gender VARCHAR(6) NOT NULL,
   PRIMARY KEY (id),
   KEY idx_people_id (id)
 );

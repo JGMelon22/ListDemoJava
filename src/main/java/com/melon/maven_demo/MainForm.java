@@ -41,7 +41,7 @@ public class MainForm {
 	 */
 	public MainForm() {
 		initialize();
-		
+
 		Image img = Toolkit.getDefaultToolkit().getImage("/home/joaog/eclipse-workspace/ListDemoJava/src/icon.png");
 		frame.setIconImage(img);
 	}
@@ -70,18 +70,24 @@ public class MainForm {
 		btnNewButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
-				// Invocando thread para fazer query
+
+				// Waiting cursor depicting a loading thread
+				btnNewButton.setCursor(new Cursor(Cursor.WAIT_CURSOR));
+
+				// Start thread to query data
 				Thread t1 = new Thread(() -> {
 					DataContext.DataQuery();
 				});
-				
+
 				t1.setPriority(5);
 				t1.start();
-				
+
 				DataContext dataContext = new DataContext();
 				textArea1.setText(dataContext.DataQuery().toString());
 				textArea1.setEnabled(false);
+
+				// Default cursor
+				btnNewButton.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
 			}
 		});
 

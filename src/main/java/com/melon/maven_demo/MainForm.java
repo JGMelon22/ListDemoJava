@@ -81,9 +81,9 @@ public class MainForm {
 
 				t1.setPriority(5);
 				t1.start();
+				t1.run();
 
-				DataContext dataContext = new DataContext();
-				textArea1.setText(dataContext.DataQuery().toString());
+				textArea1.setText(DataContext.DataQuery().toString());
 				textArea1.setEnabled(false);
 
 				// Default cursor

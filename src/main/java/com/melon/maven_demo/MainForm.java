@@ -51,20 +51,22 @@ public class MainForm {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBackground(new Color(238, 238, 238));
+		frame.getContentPane().setBackground(new Color(61, 56, 70));
+		frame.setBackground(new Color(61, 56, 70));
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setResizable(false);
 
 		JLayeredPane layeredPane = new JLayeredPane();
 		layeredPane.setForeground(new Color(129, 61, 156));
-		layeredPane.setBackground(new Color(153, 193, 241));
+		layeredPane.setBackground(new Color(61, 56, 70));
 		frame.getContentPane().add(layeredPane, BorderLayout.CENTER);
 
 		JTextArea textArea1 = new JTextArea();
+		textArea1.setBackground(new Color(246, 245, 244));
 		textArea1.setEnabled(false);
 		textArea1.setForeground(new Color(129, 61, 156));
-
+		
 		JButton btnNewButton = new JButton("Query Now!");
 		btnNewButton.setBackground(new Color(87, 227, 137));
 		btnNewButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
@@ -73,7 +75,7 @@ public class MainForm {
 
 				// Waiting cursor depicting a loading thread
 				btnNewButton.setCursor(new Cursor(Cursor.WAIT_CURSOR));
-
+				
 				// Start thread to query data
 				Thread t1 = new Thread(() -> {
 					DataContext.DataQuery();

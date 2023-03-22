@@ -23,7 +23,7 @@ public class DataContext {
 			DSLContext create = DSL.using(connection);
 
 			// Result<?> records = create.fetchStream("SELECT * FROM people;");
-			var records = create.fetch("SELECT * FROM people;");
+			var records = create.fetch("SELECT id, name, email, gender FROM people;");
 			List recordsList = new ArrayList();
 
 			for (var record : records) {

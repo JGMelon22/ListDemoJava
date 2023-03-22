@@ -14,6 +14,7 @@ import javax.swing.JFrame;
 import javax.swing.JLayeredPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+import java.awt.Font;
 
 public class MainForm {
 
@@ -63,8 +64,9 @@ public class MainForm {
 		frame.getContentPane().add(layeredPane, BorderLayout.CENTER);
 
 		JTextArea textArea1 = new JTextArea();
+		textArea1.setFont(new Font("Dialog", Font.BOLD, 14));
+		textArea1.setEditable(false);
 		textArea1.setBackground(new Color(246, 245, 244));
-		textArea1.setEnabled(false);
 		textArea1.setForeground(new Color(129, 61, 156));
 		
 		JButton btnNewButton = new JButton("Query Now!");

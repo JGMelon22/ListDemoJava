@@ -91,15 +91,16 @@ public class MainForm {
 				textArea1.setEnabled(false);
 
 				// Default cursor
-				btnNewButton.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+				btnNewButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
 			}
 		});
 
 		btnNewButton.setBounds(12, 231, 117, 25);
 		layeredPane.add(btnNewButton);
-
+		
 		JButton btnClear = new JButton("Clear");
-		btnNewButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		
+		btnClear.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		btnClear.setBackground(new Color(255, 163, 72));
 		btnClear.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

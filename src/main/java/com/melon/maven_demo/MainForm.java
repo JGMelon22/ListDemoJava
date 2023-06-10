@@ -15,6 +15,7 @@ import javax.swing.JLayeredPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import java.awt.Font;
+import javax.swing.JProgressBar;
 
 public class MainForm {
 
@@ -83,9 +84,9 @@ public class MainForm {
 					DataContext.DataQuery();
 				});
 
-				t1.setPriority(5);
+
 				t1.start();
-				t1.run();
+
 
 				textArea1.setText(DataContext.DataQuery().toString());
 				textArea1.setEnabled(false);

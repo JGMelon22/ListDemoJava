@@ -15,7 +15,6 @@ import javax.swing.JLayeredPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import java.awt.Font;
-import javax.swing.JProgressBar;
 
 public class MainForm {
 

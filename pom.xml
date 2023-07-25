@@ -28,18 +28,18 @@
 		<dependency>
 			<groupId>org.jooq</groupId>
 			<artifactId>jooq</artifactId>
-			<version>3.17.8</version>
+			<version>3.18.5</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jooq</groupId>
 			<artifactId>jooq-meta</artifactId>
-			<version>3.17.8</version>
+			<version>3.18.5</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.jooq/jooq-codegen -->
 		<dependency>
 			<groupId>org.jooq</groupId>
 			<artifactId>jooq-codegen</artifactId>
-			<version>3.17.8</version>
+			<version>3.18.5</version>
 		</dependency>
 	</dependencies>
 	<build>

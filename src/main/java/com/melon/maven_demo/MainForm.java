@@ -86,7 +86,7 @@ public class MainForm {
 
 				t1.start();
 
-
+				textArea1.setDisabledTextColor(Color.BLACK);
 				textArea1.setText(DataContext.DataQuery().toString());
 				textArea1.setEnabled(false);
 

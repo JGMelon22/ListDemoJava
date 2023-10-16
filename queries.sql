@@ -1,5 +1,5 @@
--- Database Creatioon
-CREATE DATABASE java_mysql;
+-- Database Creation
+CREATE DATABASE jooq_demo;
 
 -- Table Structure
 CREATE TABLE people (

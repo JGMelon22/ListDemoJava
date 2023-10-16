@@ -45,6 +45,8 @@ public class MainForm {
 
 		Image img = Toolkit.getDefaultToolkit().getImage("/home/joaog/eclipse-workspace/ListDemoJava/src/icon.png");
 		frame.setIconImage(img);
+		frame.setResizable(false);
+		frame.setLocationRelativeTo(null);
 	}
 
 	/**
@@ -68,7 +70,7 @@ public class MainForm {
 		textArea1.setEditable(false);
 		textArea1.setBackground(new Color(246, 245, 244));
 		textArea1.setForeground(new Color(129, 61, 156));
-		
+
 		JButton btnNewButton = new JButton("Query Now!");
 		btnNewButton.setBackground(new Color(87, 227, 137));
 		btnNewButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
@@ -77,12 +79,11 @@ public class MainForm {
 
 				// Waiting cursor depicting a loading thread
 				btnNewButton.setCursor(new Cursor(Cursor.WAIT_CURSOR));
-				
+
 				// Start thread to query data
 				Thread t1 = new Thread(() -> {
 					DataContext.DataQuery();
 				});
-
 
 				t1.start();
 
@@ -97,9 +98,9 @@ public class MainForm {
 
 		btnNewButton.setBounds(12, 231, 117, 25);
 		layeredPane.add(btnNewButton);
-		
+
 		JButton btnClear = new JButton("Clear");
-		
+
 		btnClear.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		btnClear.setBackground(new Color(255, 163, 72));
 		btnClear.addActionListener(new ActionListener() {

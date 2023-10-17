@@ -1,4 +1,4 @@
 # ListDemoJava
-Fetch data from MySQL and display on JTextArea uisng jOOQ and mysql-connector-j
+Fetch data from MySQL and displaying at JTextArea using jOOQ and mysql-connector-j
 
-![ArcoLinux_2023-03-19_13-23-19](https://user-images.githubusercontent.com/73988556/226189968-8d034228-0776-46ca-a000-419b6ec577c9.png)
+![image](https://github.com/JGMelon22/ListDemoJava/assets/73988556/cf7fd527-72c2-46b4-8f8d-cec59016b658)
